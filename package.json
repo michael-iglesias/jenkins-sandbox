@@ -1,0 +1,19 @@
+{
+  "name": "jenkins-sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/michael-iglesias/jenkins-sandbox.git",
+  "author": "Michael Iglesias <miglesias@tierion.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.4.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "npm": "^5.7.1"
+  }
+}
