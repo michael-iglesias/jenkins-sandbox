@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                yarn
+                sh 'yarn'
             }
         }
         stage('Test') {
             steps {
-                npm run test
+                sh 'npm run test'
             }
         }
         stage('Code Coverage') {
             steps {
-                npm run test --coverage
+                sh 'npm run test --coverage'
             }
         }
         stage('Deploy') {
