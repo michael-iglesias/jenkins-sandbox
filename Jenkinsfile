@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    tools {nodejs "version-name-set-in-configure-system"}
+    tools {nodejs "9.7.1"}
 
     stages {
         stage('Build') {
