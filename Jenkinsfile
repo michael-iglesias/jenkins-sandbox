@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    tools {nodejs "version-name-set-in-configure-system"}
 
     stages {
         stage('Build') {
