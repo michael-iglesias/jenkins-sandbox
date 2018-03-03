@@ -6,10 +6,12 @@
   "author": "Michael Iglesias <miglesias@tierion.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:casper": "./node_modules/casperjs/bin/casperjs test casper-test.js"
   },
   "devDependencies": {
     "babel-preset-env": "^1.6.1",
+    "casperjs": "^1.1.4",
     "jest": "^22.4.2"
   },
   "dependencies": {

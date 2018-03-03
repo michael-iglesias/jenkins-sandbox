@@ -28,6 +28,7 @@ pipeline {
             steps {
                 sh 'export phantomjs=/usr/bin/phantomjs'
                 sh 'phantomjs t.js'
+                sh 'npm run test:casper'
             }
         }
     }
