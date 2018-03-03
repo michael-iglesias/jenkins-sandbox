@@ -24,5 +24,11 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+        stage('PhantomJS') {
+            steps {
+                sh 'export phantomjs=/usr/bin/phantomjs'
+                sh 'phantomjs t.js'
+            }
+        }
     }
 }
