@@ -24,11 +24,14 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        stage('PhantomJS') {
+        stage('Cypress E2E Tests') {
             steps {
                 sh 'export phantomjs=/usr/bin/phantomjs'
                 sh 'phantomjs t.js'
-                sh 'npm run test:casper'
+
+                sh 'http-server -p 1111 . > http.log 2>&1 &'
+                sh 'npm run test:cypress'
+                sh 'fuser -k 1111/tcp'
             }
         }
     }
