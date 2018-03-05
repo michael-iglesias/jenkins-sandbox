@@ -26,6 +26,7 @@ pipeline {
         }
         stage('Cypress E2E Tests') {
             steps {
+                sh 'docker --version'
                 sh 'export phantomjs=/usr/bin/phantomjs'
                 sh 'phantomjs t.js'
 
