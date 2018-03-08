@@ -8,5 +8,4 @@ cache:
 install:
   - yarn
 script:
-  - nodemon index.html localhost 1111 &
   - $(npm bin)/cypress run
