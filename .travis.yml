@@ -10,4 +10,3 @@ install:
 script:
   - http-server -p 1111 . > http.log 2>&1 &
   - $(npm bin)/cypress run
-  - fuser -k 1111/tcp
