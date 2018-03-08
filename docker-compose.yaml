@@ -1,0 +1,18 @@
+version: '2.1'
+
+networks:
+  jenkins:
+    driver: bridge
+
+services:
+
+  cypress-test:
+    image: cypress-test
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    networks:
+      - jenkins
+    environment:
+      NODE_ENV: test
+    command: npm run test:cypress
