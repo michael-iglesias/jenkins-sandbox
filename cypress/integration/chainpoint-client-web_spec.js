@@ -1,7 +1,7 @@
 describe('Chainpoint Client Web', function () {
   it('.should() - assert that <title> is correct', function () {
     // https://on.cypress.io/visit
-    cy.visit('http://localhost:1111')
+    cy.visit('http://travis-cypress-test.s3-website-us-east-1.amazonaws.com/')
 
     // Here we've made our first assertion using a '.should()' command.
     // An assertion is comprised of a chainer, subject, and optional value.
@@ -21,7 +21,7 @@ describe('Chainpoint Client Web', function () {
   })
   context('Network Requests', function () {
     beforeEach(function () {
-      cy.visit('http://localhost:1111')
+      cy.visit('http://travis-cypress-test.s3-website-us-east-1.amazonaws.com/')
     })
 
     it('Submit 3 hashes', function () {
